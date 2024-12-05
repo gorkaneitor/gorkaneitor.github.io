@@ -19,7 +19,7 @@ header img {
 }
 nav ul{
     padding: 15px;
-    background-color: gold;
+    background-color: red;
     text-align: center;
     row-gap: 40%;
 }
@@ -29,8 +29,9 @@ nav ul li {
 }
 nav a {
     text-decoration: none;
-    color: red;
-    font-size: 1em;
+    color: gold;
+    font-size: 1.5em;
+    font-weight: 700;
 }
 main {
     clear: both;
@@ -46,4 +47,8 @@ footer {
     position: fixed;
     bottom: 0;
     left: 0;
+}
+footer p{
+    color: red;
+    font-weight: 700;
 }
