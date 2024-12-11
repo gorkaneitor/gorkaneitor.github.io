@@ -1,36 +1,90 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 a {
     text-decoration: none;
 }
 
-html {
-    min-height: 100%;
+html,
+body {
+    height: 100%;
 }
 
 body {
     background-image: linear-gradient(black 0%, gray 175%);
     font-family: "Martian Mono", monospace;
+    max-width: 1280px;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
     padding: 15px;
     background-color: rgb(230, 0, 0);
-    text-align: center;
+    justify-content: space-between;
+    display: flex;
 }
 
 header img {
     width: 250px;
 }
 
-nav ul {
+.button {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: firebrick;
+}
+
+nav {
     padding: 15px;
+}
+
+#menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+#menu ul a {
+    display: block;
+    width: max-content;
+}
+
+#menu ul li {
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+#menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
     background-color: rgb(230, 0, 0);
-    text-align: center;
-    row-gap: 40%;
+    border-radius: 5px;
+}
+
+#menu ul ul li {
+    float: none;
+    width: 150px
+}
+
+#menu ul ul a {
+    padding: 1px 15px;
+}
+
+#menu ul li:hover>ul {
+    display: block;
+}
+
+nav ul {
+    display: flex;
 }
 
 nav ul li {
@@ -47,7 +101,50 @@ nav a {
 main {
     margin: 15px;
     padding: 15px;
-    background-color: #FFD700;
+    flex: 1;
+}
+
+main p,
+main h1 {
+    color: whitesmoke;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #33b5e5;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.menu li:hover {
+    background-color: #0099cc;
+}
+
+.aside {
+    background-color: #33b5e5;
+    padding: 15px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 footer {
@@ -55,9 +152,6 @@ footer {
     width: 100%;
     padding: 15px;
     background-color: rgb(230, 0, 0);
-    position: fixed;
-    bottom: 0;
-    left: 0;
 }
 
 footer section {
@@ -66,8 +160,8 @@ footer section {
     text-align: center;
 }
 
-footer a {
-    color: gold;
+footer div a img {
+    width: 25px;
 }
 
 #youtube {
@@ -105,4 +199,113 @@ footer p {
     font-weight: 700;
     text-align: center;
     margin-top: 10px;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+
+    /* For tablets: */
+    .col-s-1 {
+        width: 8.33%;
+    }
+
+    .col-s-2 {
+        width: 16.66%;
+    }
+
+    .col-s-3 {
+        width: 25%;
+    }
+
+    .col-s-4 {
+        width: 33.33%;
+    }
+
+    .col-s-5 {
+        width: 41.66%;
+    }
+
+    .col-s-6 {
+        width: 50%;
+    }
+
+    .col-s-7 {
+        width: 58.33%;
+    }
+
+    .col-s-8 {
+        width: 66.66%;
+    }
+
+    .col-s-9 {
+        width: 75%;
+    }
+
+    .col-s-10 {
+        width: 83.33%;
+    }
+
+    .col-s-11 {
+        width: 91.66%;
+    }
+
+    .col-s-12 {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    /* For desktop: */
+    .col-1 {
+        width: 8.33%;
+    }
+
+    .col-2 {
+        width: 16.66%;
+    }
+
+    .col-3 {
+        width: 25%;
+    }
+
+    .col-4 {
+        width: 33.33%;
+    }
+
+    .col-5 {
+        width: 41.66%;
+    }
+
+    .col-6 {
+        width: 50%;
+    }
+
+    .col-7 {
+        width: 58.33%;
+    }
+
+    .col-8 {
+        width: 66.66%;
+    }
+
+    .col-9 {
+        width: 75%;
+    }
+
+    .col-10 {
+        width: 83.33%;
+    }
+
+    .col-11 {
+        width: 91.66%;
+    }
+
+    .col-12 {
+        width: 100%;
+    }
 }

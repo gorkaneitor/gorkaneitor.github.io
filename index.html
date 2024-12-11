@@ -3,45 +3,85 @@
 <head>
     <title>Twenty One Pilots</title>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
     <header>
-        <a href="index.html"><img src="img/TWENTYONEPILOTS.png" alt="TWENTYONEPILOTS"></a>
+        <a class="button" href="index.html"><img src="img/TWENTYONEPILOTS.png" alt="TWENTYONEPILOTS"></a>
+        <nav id="menu">
+            <ul>
+                <li><a href="albumak.html">ALBUMAK</a>
+                    <ul>
+                        <li><a href="twenty_one_pilots.html">Twenty One Pilots</li>
+                        <li><a href="vessel.html">Vessel</li>
+                        <li><a href="blurryface.html">Blurryface</li>
+                        <li><a href="trench.html">Trench</li>
+                        <li><a href="scaled_and_icy.html">Scaled and Icy</li>
+                        <li><a href="clancy.html">Clancy</li>
+                    </ul>
+                </li>
+                <li><a href="merch.html">MERCH</a></li>
+                <li><a href="saskia.html">SASKIA</a></li>
+            </ul>
+            <a href="javascript:void(0);" class="icon button" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
     </header>
-    <nav>
-        <ul id="">
-            <li><a href="albumak.html">ALBUMAK</a></li>
-            <li><a href="merch.html">MERCH</a></li>
-            <li><a href="saskia.html">SASKIA</a></li>
-        </ul>
-    </nav>
-    <main>
+    <main class="row">
+        <div class="col-3 col-s-3 menu">
+            <ul>
+                <li>The Flight</li>
+                <li>The City</li>
+                <li>The Island</li>
+                <li>The Food</li>
+            </ul>
+        </div>
+
+        <div class="col-6 col-s-9">
+            <h1>The City</h1>
+            <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts,
+                the old town and the modern city.</p>
+        </div>
+
+        <div class="col-3 col-s-12">
+            <div class="aside">
+                <h2>What?</h2>
+                <p>Chania is a city on the island of Crete.</p>
+                <h2>Where?</h2>
+                <p>Crete is a Greek island in the Mediterranean Sea.</p>
+                <h2>How?</h2>
+                <p>You can reach Chania airport from all over Europe.</p>
+            </div>
+        </div>
     </main>
     <footer>
         <section>
             <div id="youtube">
                 <a href="https://www.youtube.com/channel/UCBQZwaNPFfJ1gZ1fLZpAEGw" target="_blank"
-                    rel="noopener noreferrer">YOUTUBE</a>
+                    rel="noopener noreferrer"><img src="img/youtube_logo.png" alt="YOUTUBE"></a>
             </div>
             <div id="spotify">
                 <a href="https://open.spotify.com/intl-es/artist/3YQKmKGau1PzlVlkL1iodx?si=6bo6xmIaR96b6Ax1ciw2gQ&nd=1&dlsi=a6f7e93d210e4880"
-                    target="_blank" rel="noopener noreferrer">SPOTIFY</a>
+                    target="_blank" rel="noopener noreferrer"><img src="img/spotify_logo.png" alt="SPOTIFY"></a>
             </div>
             <div id="instagram">
-                <a href="https://www.instagram.com/twentyonepilots/" target="_blank"
-                    rel="noopener noreferrer">INSTAGRAM</a>
+                <a href="https://www.instagram.com/twentyonepilots/" target="_blank" rel="noopener noreferrer"><img
+                        src="img/instagram_logo.png" alt="INSTAGRAM"></a>
             </div>
             <div id="tiktok">
-                <a href="https://www.tiktok.com/@twentyonepilots" target="_blank" rel="noopener noreferrer">TIKTOK</a>
+                <a href="https://www.tiktok.com/@twentyonepilots" target="_blank" rel="noopener noreferrer"><img
+                        src="img/tiktok_logo.png" alt="TIKTOK"></a>
             </div>
             <div id="twitter">
-                <a href="https://x.com/twentyonepilots" target="_blank" rel="noopener noreferrer">TWITTER</a>
+                <a href="https://x.com/twentyonepilots" target="_blank" rel="noopener noreferrer"><img
+                        src="img/twitter_x_logo.png" alt="X"></a>
             </div>
             <div id="facebook">
-                <a href="https://www.facebook.com/twentyonepilots" target="_blank"
-                    rel="noopener noreferrer">FACEBOOK</a>
+                <a href="https://www.facebook.com/twentyonepilots" target="_blank" rel="noopener noreferrer"><img
+                        src="img/facebook_logo.png" alt="FACEBOOK"></a>
             </div>
         </section>
         <p>&copy; 2024 T&Oslash;P</p>
