@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Twenty One Pilots</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
@@ -12,20 +13,20 @@
         <a class="button" href="index.html"><img src="img/TWENTYONEPILOTS.png" alt="TWENTYONEPILOTS"></a>
         <nav id="menu">
             <ul>
-                <li><a href="albumak.html">ALBUMAK</a>
+                <li><a class="button" href="albumak.html">ALBUMAK</a>
                     <ul>
-                        <li><a href="twenty_one_pilots.html">Twenty One Pilots</li>
-                        <li><a href="vessel.html">Vessel</li>
-                        <li><a href="blurryface.html">Blurryface</li>
-                        <li><a href="trench.html">Trench</li>
-                        <li><a href="scaled_and_icy.html">Scaled and Icy</li>
-                        <li><a href="clancy.html">Clancy</li>
+                        <li><a class="button" href="twenty_one_pilots.html">Twenty One Pilots</a></li>
+                        <li><a class="button" href="vessel.html">Vessel</a></li>
+                        <li><a class="button" href="blurryface.html">Blurryface</a></li>
+                        <li><a class="button" href="trench.html">Trench</a></li>
+                        <li><a class="button" href="scaled_and_icy.html">Scaled and Icy</a></li>
+                        <li><a class="button" href="clancy.html">Clancy</a></li>
                     </ul>
                 </li>
-                <li><a href="merch.html">MERCH</a></li>
-                <li><a href="saskia.html">SASKIA</a></li>
+                <li><a class="button" href="merch.html">MERCH</a></li>
+                <li><a class="button" href="saskia.html">SASKIA</a></li>
             </ul>
-            <a href="javascript:void(0);" class="icon button" onclick="myFunction()">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
             </a>
         </nav>
@@ -47,14 +48,14 @@
         </div>
 
         <div class="col-3 col-s-12">
-            <div class="aside">
+            <aside>
                 <h2>What?</h2>
                 <p>Chania is a city on the island of Crete.</p>
                 <h2>Where?</h2>
                 <p>Crete is a Greek island in the Mediterranean Sea.</p>
                 <h2>How?</h2>
                 <p>You can reach Chania airport from all over Europe.</p>
-            </div>
+            </aside>
         </div>
     </main>
     <footer>
@@ -86,6 +87,16 @@
         </section>
         <p>&copy; 2024 T&Oslash;P</p>
     </footer>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("menu");
+            if (x.className === "responsive") {
+                x.className = "";
+            } else {
+                x.className = "responsive";
+            }
+        }
+    </script>
 </body>
 
 </html>
