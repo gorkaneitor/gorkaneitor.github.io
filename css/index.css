@@ -14,7 +14,7 @@ body {
 }
 
 body {
-    background-image: linear-gradient(black 0%, gray 175%);
+    background-image: linear-gradient(black 0%, gray 100%);
     font-family: "Martian Mono", monospace;
     max-width: 1280px;
     display: flex;
@@ -71,9 +71,13 @@ nav {
     border-radius: 5px;
 }
 
+#menu ul li:hover>ul {
+    display: block;
+}
+
 #menu ul ul li {
     float: none;
-    width: 150px;
+    width: max-content;
 }
 
 .button:hover {
@@ -82,11 +86,7 @@ nav {
 }
 
 #menu ul ul a {
-    padding: 1px 15px;
-}
-
-#menu ul li:hover>ul {
-    display: block;
+    padding: 1px 5px;
 }
 
 nav ul {
@@ -215,16 +215,23 @@ footer p {
 @media only screen and (max-width: 768px) {
     #menu ul {
         display: none;
+        flex-direction: column;
         width: 100%;
+    }
+
+    #menu ul ul li {
+        display: none;
+        position: relative;
     }
 
     #menu .icon {
         display: block;
         background-color: #333;
         padding: 10px;
-        position: absolute;
-        right: 15px;
-        top: 15px;
+    }
+
+    #menu ul ul:hover>li {
+        display: block;
     }
 
     #menu.responsive ul {
@@ -238,12 +245,6 @@ footer p {
     #menu ul li {
         text-align: center;
         width: 100%;
-        float: none;
-    }
-
-    #menu ul ul {
-        position: relative;
-        top: 0;
     }
 }
 
@@ -301,7 +302,7 @@ footer p {
 
 @media only screen and (min-width: 768px) {
 
-    /* For desktop: */
+    /* Ordenagailuentzat: */
     .col-1 {
         width: 8.33%;
     }
@@ -348,5 +349,17 @@ footer p {
 
     .col-12 {
         width: 100%;
+    }
+
+    #menu .icon {
+        display: none;
+    }
+
+    #menu ul {
+        display: flex;
+    }
+
+    #menu ul li {
+        display: inline-block;
     }
 }
