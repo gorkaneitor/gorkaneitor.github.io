@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Twenty One Pilots</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/produktuak.css">
+    <link rel="stylesheet" href="css/eskaria.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="img/top_logo.png">
 </head>
@@ -40,39 +40,25 @@
         </ul>
     </nav>
     <main>
-        <h2>Albumak</h2>
-        <section>
-            <div id="prod1"><a href="">
-                    <img src="img/twenty_one_pilots.jpg" alt="Twenty One Pilots - Twenty One Pilots"><br>
-                    <p>Twenty One Pilots<br></p>
-                    <p>4,99 &euro;</p>
-                </a></div>
-            <div id="prod2"><a href="">
-                    <img src="img/vessel.jpg" alt="Twenty One Pilots - Vessel"><br>
-                    <p>Vessel<br></p>
-                    <p>6,99 &euro;</p>
-                </a></div>
-            <div id="prod3"><a href="blurryface.html">
-                    <img src="img/blurryface.jpg" alt="Twenty One Pilots - Blurryface"><br>
-                    <p>Blurryface<br></p>
-                    <p>6,99 &euro;</p>
-                </a></div>
-            <div id="prod4"><a href="">
-                    <img src="img/trench.jpg" alt="Twenty One Pilots - Trench"><br>
-                    <p>Trench<br></p>
-                    <p>10,99 &euro;</p>
-                </a></div>
-            <div id="prod5"><a href="">
-                    <img src="img/scaled_and_icy.jpg" alt="Twenty One Pilots - Scaled and Icy"><br>
-                    <p>Scaled and Icy<br></p>
-                    <p>14,99 &euro;</p>
-                </a></div>
-            <div id="prod6"><a href="">
-                    <img src="img/clancy.jpg" alt="Twenty One Pilots - Clancy"><br>
-                    <p>Clancy<br></p>
-                    <p>13,99 &euro;</p>
-                </a></div>
-        </section>
+        <h2>Eskaria</h2>
+        <form action="" method="post">
+            <fieldset>
+                <legend>Zure datuak</legend>
+                <label for="Titularra">Titularra:
+                    <input type="text" name="Izena" placeholder="Izena"><br>
+                </label>
+                <label for="Zenbakia">Zenbakia:
+                    <input type="text" name="Zenbakia" placeholder="XXXX XXXX XXXX XXXX"><br>
+                </label>
+                <label for="Iraungitze-data">Iraungitze-data (hh/uuuu):
+                    <input type="text" name="Iraungitze-data" placeholder="HH/UUUU"><br>
+                </label>
+                <label for="CVC">CVC:
+                    <input type="text" name="CVC" pattern="[0-9]{3}" placeholder="XXX"><br>
+                </label>
+            </fieldset>
+        </form>
+        <a href="eskaria5.html"><button>Hurrengoa</button></a>
     </main>
     <footer>
         <section>

@@ -1,0 +1,107 @@
+main h2,
+main p{
+    color: whitesmoke;
+}
+
+main h2{
+    margin-bottom: 15px;
+}
+
+fieldset {
+    padding: 0 15px 15px 15px;
+}
+
+legend {
+    font-size: 100%;
+    color: whitesmoke;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    font-size: 100%;
+    color: whitesmoke;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+fieldset input,
+fieldset textarea {
+    width: 100%;
+    padding: 5px;
+}
+
+label textarea {
+    height: 100px;
+}
+
+button {
+    background-color: deepskyblue;
+    color: whitesmoke;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+main table {
+    border: 1px solid whitesmoke;
+}
+
+fieldset {
+    color: whitesmoke;
+}
+
+fieldset p {
+    margin-bottom: 15px;
+}
+
+table {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+table th {
+    text-align: center;
+    width: 40%;
+    border: 1px solid whitesmoke;
+    color: whitesmoke;
+    padding: 5px;
+}
+
+table input {
+    background-color: deepskyblue;
+    color: whitesmoke;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+tbody td {
+    border: 1px solid whitesmoke;
+    color: whitesmoke;
+    padding: 2px;
+}
+
+#guztira {
+    border: 1px solid whitesmoke;
+    color: whitesmoke;
+}
+
+main img{
+    width: 250px;
+}
+
+.radio{
+    display: inline-flex;
+    align-items: center;
+    color: whitesmoke;
+}
+
+.radio input[type="radio"] {
+    margin-right: 10px;
+}
+
+.radio br{
+    display: block;
+}

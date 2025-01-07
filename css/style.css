@@ -11,26 +11,28 @@ a {
 html,
 body {
     height: 100%;
+    width: 100%;
     margin: 0;
     display: flex;
     flex-direction: column;
 }
 
 body {
-    background-image: linear-gradient(black 0%, gray 100%);
+    background-image: linear-gradient(black 0%, gray 150%);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family: "Martian Mono", monospace;
-    max-width: 1280px;
-    flex: 1;
+    width: auto;
+    flex: 1 1 auto;
 }
 
 header {
-    padding: 15px 0 0 15px;
+    padding: 15px 15px 0 15px;
     background-color: rgb(230, 0, 0);
     display: flex;
+    justify-content: space-between;
 }
 
 header img {
@@ -48,6 +50,7 @@ nav {
 .button {
     padding: 5px;
     border-radius: 5px;
+    height: fit-content;
 }
 
 .button:hover {
@@ -108,6 +111,7 @@ nav ul li {
     display: inline;
 }
 
+header a,
 nav a {
     color: #FFD700;
     font-size: 1.5em;
@@ -118,12 +122,6 @@ main {
     margin: 15px;
     padding: 15px;
     flex: 1;
-}
-
-main p,
-main h1,
-main h2 {
-    color: whitesmoke;
 }
 
 footer {
@@ -186,5 +184,6 @@ footer p {
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
     }
 }

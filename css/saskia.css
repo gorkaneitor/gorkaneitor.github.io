@@ -1,0 +1,55 @@
+main h2,
+main p {
+  color: whitesmoke;
+}
+
+main h2{
+  margin-bottom: 15px;
+}
+
+main table {
+  border: 1px solid whitesmoke;
+}
+
+main form {
+  color: whitesmoke;
+}
+
+table {
+  text-align: center;
+}
+
+table th {
+  text-align: center;
+  width: 40%;
+  border: 1px solid whitesmoke;
+  color: whitesmoke;
+  padding: 5px;
+}
+
+table input {
+  background-color: deepskyblue;
+  color: whitesmoke;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+tbody td {
+  border: 1px solid whitesmoke;
+  color: whitesmoke;
+  padding: 2px;
+}
+
+#guztira {
+  border: 1px solid whitesmoke;
+  color: whitesmoke;
+}
+
+button {
+  background-color: deepskyblue;
+  color: whitesmoke;
+  text-align: center;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 10px;
+}
